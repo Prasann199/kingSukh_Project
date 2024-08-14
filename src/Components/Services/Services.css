@@ -1,0 +1,196 @@
+.page4 {
+    width: 100%;
+    height: 70vh; /* Full viewport height */
+    /* border: 5px solid blue; */
+    position: relative;
+    display: flex;
+    font-family: "Poppins";
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure borders are included in the dimensions */
+}
+
+.page4 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire parent container */
+    position: absolute; /* Ensure the image isn't influenced by the flex layout */
+    top: 0;
+    left: 0;
+}
+.page4 .page4-box{
+    position: absolute;
+    width: 45vw;
+    padding: 5%;
+    left: 50%;
+    height: 100vh;
+    background: white;
+}
+.page4-box p{
+    position: relative;
+    padding-right: 20px; /* Adjust space after the paragraph */
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.page4-box p:first-child:after{
+    content: "";
+    position: absolute;
+
+    top: 50%; /* Align with the middle of the text */
+    transform: translateY(-50%);
+    width: 60%; /* Length of the bar */
+    height: 2px;  /* Thickness of the bar */
+    background-color: #ff3147; /* Bar color */
+    margin-left: 10px; /* Space between the text and the bar */
+}
+.page4-box h1{
+    font-size: 4vw;
+    line-height: 1.2;
+    margin: 10px 0px;
+}
+.page4-box :nth-child(3){
+    font-size: 22px;
+    /* font-weight: 600; */
+    margin: 10px 0px;
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.page4-box :nth-child(3) span{
+    width: 50px;
+    height: 50px;
+    background-color: #dbeafe;
+    color: #60a5fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.page4-box :nth-child(3) span i{
+    font-size: 30px;
+}
+.page4-box :nth-child(4){
+    font-size: 22px;
+    /* font-weight: 600; */
+    margin: 10px 0px;
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.page4-box :nth-child(4) span{
+    width: 50px;
+    height: 50px;
+    background-color:  #fce7f3;
+    color: #f472b6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.page4-box :nth-child(4) span i{
+    font-size: 30px;
+}
+.page4-box :nth-child(5){
+    font-size: 22px;
+    /* font-weight: 600; */
+    margin: 10px 0px;
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.page4-box :nth-child(5) span{
+    width: 50px;
+    height: 50px;
+    background-color: #f3e8ff;
+    color: #c084fc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.page4-box :nth-child(5) span i{
+    font-size: 30px;
+}
+.page4-box :nth-child(6){
+    font-size: 22px;
+    /* font-weight: 600; */
+    margin: 10px 0px;
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+}
+.page4-box :nth-child(6) span{
+    width: 50px;
+    height: 50px;
+    background-color: #ffe4e6;
+    color: #fb7185;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.page4-box :nth-child(6) span i{
+    font-size: 30px;
+}
+@media (max-width:768px){
+    .page4{
+        flex-direction: column;
+        height: 55vh;  
+    }
+    .page4-box h1{
+        font-size: 5vw;
+    }
+    .page4-box{
+        width: 85%;
+        height: fit-content;
+        background: white;
+        position: absolute;
+        left: 7.5%;
+        top: 25%;
+        padding: 5%;
+        overflow: hidden;
+    }
+}
+@media (max-width:1500px){
+    .page4{
+        flex-direction: column;
+        height: 55vh;  
+    }
+}
+@media (max-width:650px){
+    .page4{
+        flex-direction: column;
+        height: 45vh;  
+    }
+    .page4 .page4-box{
+
+        width: 90vw;
+        left: 5vw;
+        height: 85vh;
+    }
+    .page4 .page4-box h1{
+        font-size: 8vw;
+    }
+}

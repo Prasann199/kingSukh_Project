@@ -1,0 +1,94 @@
+nav{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    top: 0%;
+    background: black;
+    font-family: "Poppins";
+}
+nav .logo p{
+    font-size: 17px;
+    width: 120px;
+    color: white;
+}
+
+nav .nav-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    height: 40%;
+    /* border: 2px solid red;   */
+}
+nav .nav-options a{
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.6s;
+}
+.page1-btn button {
+    width: 120px;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #ff3147;
+    color: black;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.page1-btn button .btn-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+
+.page1-btn button:hover .btn-overlay {
+    top: 0;
+}
+
+.page1-btn button span {
+    position: relative;
+    z-index: 2;
+}
+.page1-btn{
+    /* border: 2px solid green; */
+}
+.page1-btn img{
+    filter: invert(1);
+    width: 50px;
+    display: none;
+}
+@media (max-width:1000px){
+    nav .nav-options{
+        /* border: 5px solid red; */
+        width: 60%;
+    }
+}
+@media (max-width:770px){
+    nav .nav-options{
+        display: none;
+    }
+    .page1-btn button{
+        display: none;
+    }
+    .page1-btn img{
+        display: block;
+    }
+}

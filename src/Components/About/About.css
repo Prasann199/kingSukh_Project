@@ -1,0 +1,135 @@
+
+.page2{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+    /* border: 2px solid blue; */
+    
+}
+
+.page2-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    /* background-color: aquamarine; */
+}
+.page2-left{
+    width: 45%;
+    height: fit-content;
+    z-index: 2;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    /* border: 4px solid gold; */
+}
+.page2-left img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5%;
+    
+}
+.page2-dscrpt{
+    width: 55%;
+    font-family: "Poppins";
+    height: fit-content;
+    z-index: 1;
+}
+.page2-data{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    text-wrap: wrap;
+}
+.page2-dscrpt p:first-child {
+    position: relative;
+    padding-right: 20px; /* Adjust space after the paragraph */
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.page2-dscrpt h1{
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+.page2-dscrpt a{
+    display: block;
+    
+}
+.page2-dscrpt p:nth-child(3){
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.page2-dscrpt p:first-child::after {
+    content: "";
+    position: absolute;
+
+    top: 50%; /* Align with the middle of the text */
+    transform: translateY(-50%);
+    width: 60%; /* Length of the bar */
+    height: 2px;  /* Thickness of the bar */
+    background-color: #ff3147; /* Bar color */
+    margin-left: 10px; /* Space between the text and the bar */
+}
+.page2-dscrpt button {
+    width: 130px;
+    height: 45px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #ff3147;
+    color: black;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.page2-dscrpt button .btn-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+
+.page2-dscrpt button:hover .btn-overlay {
+    top: 0;
+}
+
+.page2-dscrpt button span {
+    position: relative;
+    z-index: 2;
+}
+@media (max-width:1000px){
+    .page2-dscrpt .page2-data h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width:780px){
+    .page2-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .page2-main .page2-left{
+        width: 100%;
+    }
+    .page2-dscrpt{
+        width: 100%;
+    }
+}
