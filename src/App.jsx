@@ -1,7 +1,7 @@
 
 import './App.css'
 import About from './Components/About/About'
-import BookingStats from './Components/BookingStats/BookingStats'
+const BookingStats = lazy(() => import('./Components/BookingStats/BookingStats'));
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Home from './Components/Home/Home'
@@ -12,6 +12,7 @@ import Services from './Components/Services/Services'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   
