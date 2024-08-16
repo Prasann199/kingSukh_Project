@@ -29,7 +29,10 @@ nav {
     width: 45%;
     height: 40%;
   }
-  
+  .nav-options-small a:hover,.nav-options-large a:hover{
+    color: #ff3147;
+    scale: 1.2;
+  }
   .nav-options-large a {
     text-decoration: none;
     color: white;
