@@ -8,7 +8,7 @@ import twitter2 from "../../assets/twitter.png"
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
         <hr />
         <div className="footer-up">
           <div className="footer-box">
@@ -16,10 +16,10 @@ const Footer = () => {
             <p>
             Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your getaway truly extraordinary.</p>
             <div className="page1-btn">
-          <button>
+          <a href="https://wa.link/at5ion"><button>
             <div className="btn-overlay"></div>
             <span>Book Now</span>
-          </button>
+          </button></a>
         </div>
           </div>
           <div className="footer-box">

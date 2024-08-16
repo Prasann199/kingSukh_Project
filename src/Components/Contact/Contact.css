@@ -184,29 +184,25 @@ textarea:focus {
 }
 
 @media (max-width:1100px){
-    .contact{
-        display: flex;
+    .contact {
         flex-direction: column;
-        /* height: 100vh; Ensure the contact section takes full height */
         position: relative;
-        /* border: 3px solid red; */
-        overflow: hidden; /* Hide any overflow */
-    }
-    .contact-left{
+        height: 100vh;
+      }
+    
+      .contact-left {
         width: 100%;
-    height: fit-content;
-    position: absolute;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    top: 100%; /* Start with it hidden below the viewport */
-    transform: translateY(-100%); /* Pull it up to cover the contact section */
-    transition: transform 0.3s ease; /* Smooth transition for the effect */
-    display: flex;
-    flex-direction: row;
-    }
-    .contact:hover .contact-left {
-        transform: translateY(0); /* On hover, bring it down */
-    }
+        height: fit-content;
+        position: absolute;
+        
+        bottom: 0; /* Keep it aligned at the bottom initially */
+        /* transform: translateY(100%); Hide it below the viewport */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+      }
+    
+      .contact.clicked .contact-left {
+        transform: translateY(0); /* Bring it into view when clicked */
+      }
 }
 @media (max-width:839px){
     .contact-left .contact-left-bottom{
@@ -220,6 +216,9 @@ textarea:focus {
         height: fit-content;
         /* border: 3px solid orange; */
     }
+    .contact-right{
+        padding: 0px;
+    }
     
 }
 @media (max-width:580px){
@@ -227,11 +226,17 @@ textarea:focus {
         display: flex;
         flex-direction: column;
         width: 100%;
+        
         /* border: 2px solid yellow; */
     }
     .contact-right .email-number>.email ,.mobile-no,.contact-right .name>.fname,.lname{
         width: 100%;
+        margin-top: 15px;
     }
-    
-    
+    .contact-right form{
+        padding: 0px 10px;
+    }
+    .contact{
+        height: 110vh;
+    }
 }

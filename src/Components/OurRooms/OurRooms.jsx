@@ -4,7 +4,7 @@ import small from "../../assets/small.jpg"
 import large from "../../assets/large.jpg"
 const OurRooms = () => {
   return (
-    <div className="page3">
+    <div className="page3" id="rooms">
         <p>OUR LIVING ROOM</p>
         <h1>The Most Memorable Rest Time Starts Here.</h1>
         <div className="page3-main">
@@ -32,7 +32,9 @@ const OurRooms = () => {
               <p>
                 Starting from <span>Rs. 1000/night</span>
               </p>
+              <a href="https://wa.link/at5ion">
               <button>book now</button>
+              </a>
             </div>
           </div>
           <div className="page3-main-right">
@@ -59,7 +61,9 @@ const OurRooms = () => {
               <p>
                 Starting from <span>Rs. 1000/night</span>
               </p>
+              <a href="https://wa.link/at5ion">
               <button>book now</button>
+              </a>
             </div>
           </div>
         </div>

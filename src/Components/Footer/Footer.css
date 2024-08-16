@@ -29,6 +29,7 @@
 }
 .footer h4{
     margin-bottom: 30px;
+    color: white;
     
 }
 .logo1{
@@ -78,4 +79,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+@media (max-width:569px){
+    .footer{
+        padding: 20px;
+    }
+    .footer h4{
+        margin-bottom: 10px;
+        margin-top: 25px;
+        
+    }
 }

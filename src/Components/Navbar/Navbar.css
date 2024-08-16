@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     width: 100%;
     height: 15vh;
@@ -10,27 +10,38 @@ nav{
     top: 0%;
     background: black;
     font-family: "Poppins";
-}
-nav .logo p{
+  }
+  .page1-btn a{
+    text-decoration: none;
+    color: transparent;
+  }
+  nav .logo p {
     font-size: 17px;
     width: 120px;
     color: white;
-}
-
-nav .nav-options{
+  }
+  
+  /* Large screen navigation */
+  .nav-options-large {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 45%;
     height: 40%;
-    /* border: 2px solid red;   */
-}
-nav .nav-options a{
+  }
+  
+  .nav-options-large a {
     text-decoration: none;
     color: white;
     transition: all ease 0.6s;
-}
-.page1-btn button {
+  }
+  
+  /* Small screen navigation */
+  .nav-options-small {
+    display: none; /* Hidden on larger screens */
+  }
+  
+  .page1-btn button {
     width: 120px;
     height: 40px;
     margin: 10px 0px;
@@ -46,9 +57,9 @@ nav .nav-options a{
     color: black;
     font-weight: 500;
     z-index: 1;
-}
-
-.page1-btn button .btn-overlay {
+  }
+  
+  .page1-btn button .btn-overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -57,38 +68,104 @@ nav .nav-options a{
     background: white;
     transition: top 0.3s ease;
     z-index: -1;
-}
-
-.page1-btn button:hover .btn-overlay {
+  }
+  
+  .page1-btn button:hover .btn-overlay {
     top: 0;
-}
-
-.page1-btn button span {
+  }
+  
+  .page1-btn button span {
     position: relative;
     z-index: 2;
-}
-.page1-btn{
+  }
+  
+  .page1-btn {
     /* border: 2px solid green; */
-}
-.page1-btn img{
+  }
+  
+  .page1-btn img {
     filter: invert(1);
     width: 50px;
     display: none;
-}
-@media (max-width:1000px){
-    nav .nav-options{
-        /* border: 5px solid red; */
-        width: 60%;
+    cursor: pointer;
+  }
+  
+  /* Sliding Menu Styles */
+  .nav-menu {
+    font-family: "Poppins";
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 40px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .nav-menu.open {
+    right: 0;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .nav-menu .nav-options-small {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav-menu .nav-options-small a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  @media (max-width: 770px) {
+    .nav-options-large {
+      display: none; /* Hidden on smaller screens */
     }
-}
-@media (max-width:770px){
-    nav .nav-options{
-        display: none;
+  
+    .nav-options-small {
+      display: flex; /* Visible on smaller screens */
     }
-    .page1-btn button{
-        display: none;
+  
+    .page1-btn button {
+      display: none;
     }
-    .page1-btn img{
-        display: block;
+  
+    .page1-btn img {
+      display: block;
     }
-}
+  
+    nav {
+      width: 100%;
+      height: fit-content;
+      padding: 3vw 10px;
+    }
+  
+    nav .logo {
+      font-size: 1.5vw;
+      line-height: 1.2;
+    }
+  }
+  

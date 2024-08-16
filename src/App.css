@@ -17,8 +17,8 @@
     z-index: 20;
 }
 .pre-loader h1{
-    font-size: 85px;
+    font-size: 7vw;
 }
 .pre-loader span{
-    color: cornflowerblue;
+    color: #ff3147;
 }

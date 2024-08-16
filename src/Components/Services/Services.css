@@ -5,7 +5,7 @@
     position: relative;
     display: flex;
     font-family: "Poppins";
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
     margin: 0;
     box-sizing: border-box; /* Ensure borders are included in the dimensions */
@@ -22,10 +22,16 @@
 .page4 .page4-box{
     position: absolute;
     width: 45vw;
-    padding: 5%;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+    justify-content: center;
     left: 50%;
-    height: 100vh;
+    height: 100%;
     background: white;
+    overflow: hidden;
 }
 .page4-box p{
     position: relative;
@@ -154,10 +160,16 @@
 .page4-box :nth-child(6) span i{
     font-size: 30px;
 }
+@media (max-width:1500px){
+    .page4{
+        flex-direction: column;
+        height: 80vh;  
+    }
+}
 @media (max-width:768px){
     .page4{
         flex-direction: column;
-        height: 55vh;  
+        height: 85vh;  
     }
     .page4-box h1{
         font-size: 5vw;
@@ -168,27 +180,23 @@
         background: white;
         position: absolute;
         left: 7.5%;
-        top: 25%;
-        padding: 5%;
+        /* top: 25%; */
+        padding: 50px 20px;
         overflow: hidden;
     }
 }
-@media (max-width:1500px){
-    .page4{
-        flex-direction: column;
-        height: 55vh;  
-    }
-}
+
 @media (max-width:650px){
     .page4{
         flex-direction: column;
-        height: 45vh;  
+        height: 75vh;  
     }
     .page4 .page4-box{
-
         width: 90vw;
         left: 5vw;
-        height: 85vh;
+        /* top: 7.5vh; */
+        padding: 50px 20px;
+        height: fit-content;
     }
     .page4 .page4-box h1{
         font-size: 8vw;

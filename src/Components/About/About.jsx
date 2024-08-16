@@ -4,7 +4,7 @@ import out from "../../assets/out.jpg"
 
 const About = () => {
   return (
-    <div className="page2">
+    <div className="page2" id="about" >
         <div className="page2-main">
           <div className="page2-left">
             <img src={out} alt="" />
@@ -29,10 +29,10 @@ const About = () => {
                 Bengal 723156
               </a>
               <a href="">Contact us: +91 9007062180</a>
-              <button>
+              <a href="https://wa.link/at5ion"><button>
                 <div className="btn-overlay"></div>
                 <span>Book Now</span>
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
@@ -40,4 +40,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

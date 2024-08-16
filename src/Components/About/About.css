@@ -46,6 +46,7 @@
     padding: 10px;
     text-wrap: wrap;
 }
+
 .page2-dscrpt p:first-child {
     position: relative;
     padding-right: 20px; /* Adjust space after the paragraph */
@@ -78,6 +79,10 @@
     height: 2px;  /* Thickness of the bar */
     background-color: #ff3147; /* Bar color */
     margin-left: 10px; /* Space between the text and the bar */
+}
+.page2-dscrpt a{
+    text-decoration: none;
+    color: blue;
 }
 .page2-dscrpt button {
     width: 130px;
@@ -131,5 +136,8 @@
     }
     .page2-dscrpt{
         width: 100%;
+    }
+    .page2{
+        padding: 50px 10px;
     }
 }

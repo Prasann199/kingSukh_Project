@@ -3,12 +3,12 @@ import "./Services.css";
 import palash from "../../assets/palash.webp";
 const Services = () => {
   return (
-    <div className="page4">
+    <div className="page4" id="services">
         <img src={palash} alt="" />
         <div className="page4-box">
           <p>SERVICES</p>
           <h1>Strive Only For The Best.</h1>
-          <p>
+          <p >
             <span>
               <i class="ri-shield-star-line"></i>
             </span>
