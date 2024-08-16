@@ -1,18 +1,24 @@
 
 import './App.css'
-import About from './Components/About/About'
-import BookingStats from './Components/BookingStats/BookingStats'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
-import Home from './Components/Home/Home'
-import Map from './Components/Map/Map'
-import Navbar from './Components/Navbar/Navbar'
-import OurRooms from './Components/OurRooms/OurRooms'
-import Services from './Components/Services/Services'
+import React, { Suspense } from 'react';
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Services from './Components/Services/Services';
+import BookingStats from './Components/BookingStats/BookingStats';
+import Contact from './Components/Contact/Contact';
+import Map from './Components/Map/Map';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
+
 gsap.registerPlugin(ScrollTrigger);
+
+// Lazy loading OurRooms component
+const OurRooms = React.lazy(() => import('./Components/OurRooms/OurRooms'));
+
 
 function App() {
   
@@ -262,7 +268,9 @@ t1.from(".page2-dscrpt .page2-data :nth-child(6)", {
       <Navbar  />
       <Home  />
       <About />
-      <OurRooms />
+       <Suspense fallback={<div>Loading...</div>}>
+        <OurRooms />
+      </Suspense>
       <Services />
       <BookingStats />
       <Contact />

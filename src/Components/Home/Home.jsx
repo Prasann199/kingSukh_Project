@@ -14,7 +14,7 @@ const Home = () => {
 
         {/* <marquee behavior="" direction="">KingSukh Guest House KingSukh Guest House</marquee> */}
         <div className="page1-img">
-          <img src={ayodhya} alt="" />
+          <img src={ayodhya} loading='lazy' alt="loading" />
         </div>
       </div>
   )

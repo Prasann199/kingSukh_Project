@@ -7,7 +7,7 @@ const About = () => {
     <div className="page2" id="about" >
         <div className="page2-main">
           <div className="page2-left">
-            <img src={out} alt="" />
+            <img src={out} loading='lazy' alt="loading" />
           </div>
           <div className="page2-dscrpt">
             <div className="page2-data">

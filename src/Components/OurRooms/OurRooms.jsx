@@ -10,7 +10,7 @@ const OurRooms = () => {
         <div className="page3-main">
           <div className="page3-main-left">
             <div className="page3-main-top page3-main-top1">
-              <img src={small} alt="" />
+              <img src={small} loading='lazy' alt="loading" />
               <div className="icons">
                 <span>
                   <i class="ri-heart-fill"></i>
@@ -39,7 +39,7 @@ const OurRooms = () => {
           </div>
           <div className="page3-main-right">
             <div className="page3-main-top page3-main-top2">
-              <img src={large} alt="" />
+              <img src={large} loading='lazy' alt="loading" />
               <div className="icons">
                 <span>
                   <i class="ri-heart-fill"></i>

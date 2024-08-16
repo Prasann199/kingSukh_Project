@@ -65,10 +65,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-left-bottom">
-            <img src={facebook} alt="" />
-            <img src={instagram} alt="" />
-            <img src={twitter} alt="" />
-            <img src={linkedin} alt="" />
+            <img src={facebook} loading='lazy' alt="loading" />
+            <img src={instagram} loading='lazy' alt="loading" />
+            <img src={twitter} loading='lazy' alt="loading" />
+            <img src={linkedin} loading='lazy' alt="loading"/>
           </div>
         </div>
         <div className="contact-right">

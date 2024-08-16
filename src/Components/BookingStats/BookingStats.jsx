@@ -89,44 +89,44 @@ const BookingStats = () => {
           <div className="blank"></div>
           <div className="gallery">
             <div className="page5-box page5-box1">
-              <img src={out} alt="" />
+              <img src={out} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box"></div>
             <div className="page5-box"></div>
             <div className="page5-box page5-box2">
-              <img src={ayodhya} alt="" />
+              <img src={ayodhya} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box page5-box3">
-              <img src={large} alt="" />
+              <img src={large} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box"></div>
             <div className="page5-box"></div>
             <div className="page5-box page5-box4">
-              <img src={palash} alt="" />
+              <img src={palash} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box page5-box5">
-              <img src={small} alt="" />
+              <img src={small} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box"></div>
             <div className="page5-box"></div>
             <div className="page5-box page5-box6">
-              <img src={baranti} alt="" />
+              <img src={baranti} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box page5-box7">
-              <img src={recape} alt="" />
+              <img src={recape} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box"></div>
             <div className="page5-box"></div>
             <div className="page5-box page5-box8">
-              <img src={flower} alt="" />
+              <img src={flower} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box page5-box9">
-              <img src={room1} alt="" />
+              <img src={room1} loading='lazy' alt="loading" />
             </div>
             <div className="page5-box"></div>
             <div className="page5-box"></div>
             <div className="page5-box page5-box10">
-              <img src={mithun} alt="" />
+              <img src={mithun} loading='lazy' alt="loading" />
             </div>
           </div>
         </div>
