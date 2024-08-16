@@ -1,7 +1,7 @@
 
 import './App.css'
 import About from './Components/About/About'
-const BookingStats = lazy(() => import('./Components/BookingStats/BookingStats'));
+import BookingStats from './Components/BookingStats/BookingStats'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Home from './Components/Home/Home'
